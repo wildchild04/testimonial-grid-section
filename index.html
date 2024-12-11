@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'm-violet': '#733FC8',
+            'l-violet': '#A775F1',
+            'g-blue': '#48556A',
+            'd-blue': '#19202D',
+            'l-gray': '#CFCFCF',
+            'b-gray': '#ECF2F8'
+          },
+          fontFamily: {
+            barlow: ['"Barlow Semi Condensed"']
+          },
+          fontSize: {
+            sm: ['0.813rem', '0.813rem'],
+            'sm-2': ['0.813rem', '1.125rem'],
+            xsm: ['0.688rem', '0.688rem'],
+            xl: ['1.250rem'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-b-gray font-barlow">
+  <main class="md:w-full md:mx-auto md:max-w-[1110px]">
+    <div class="grid px-6 md:px-0 gap-6 md:gap-x-[1.875rem] mt-[4.438rem] md:mt-[10.250rem] md:grid-cols-4">
+      <div class="grid gap-6 md:gap-x-[1.875rem] md:grid-cols-3 md:col-span-3">
+        <div class="bg-m-violet pt-[1.625rem] px-8 rounded-lg relative md:col-span-2 ">
+          <div class="flex gap-[1.062rem]">
+            <img src="./images/image-daniel.jpg" alt="avatar pic" class="w-8 h-8 rounded-full border-2 border-l-violet">
+            <div>
+              <h3 class="text-white font-medium text-sm">Daniel Clifford</h3>
+              <h4 class="pt-1 text-white opacity-50 text-xsm font-medium">Verified Graduate</h4>
+            </div>
+            <img class=" absolute inset-y-0 right-7 z-10" src="./images/bg-pattern-quotation.svg" alt="quotes">
+          </div>
+          <div class="relative font-semibold text-xl mt-[1.125rem] leading-[auto] text-white z-20 ">
+            I received a job offer mid-course, and the subjects I learned were current, if not more so,
+            in the company I joined. I honestly feel I got every penny’s worth.
+          </div>
+          <div class="mt-8 md:mt-4 text-l-gray pb-8 opacity-70 font-medium text-sm-2 ">
+            “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
+            transition and have heard some people who had an amazing experience here. I signed up
+            for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+            The next 12 weeks was the best - and most grueling - time of my life. Since completing
+            the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+          </div>
+        </div>
+
+        <div class="bg-g-blue text-white pt-[1.625rem] px-8 rounded-lg md:w-[255px]">
+          <div class="flex gap-[1.062rem]">
+            <img src="./images/image-jonathan.jpg" alt="avatar pic" class="w-8 h-8 rounded-full ">
+            <div>
+              <h3 class="font-medium text-sm">Jonathan Walters</h3>
+              <h4 class="pt-1 opacity-50 text-xsm font-medium">Verified Graduate</h4>
+            </div>
+          </div>
+
+          <div class="font-semibold text-xl mt-[1.125rem] ">
+            The team was very supportive and kept me motivated
+          </div>
+          <div class="mt-4 pb-8 opacity-70 font-medium text-sm-2 ">
+            “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
+            for a big company. This was one of the best investments I’ve made in myself. ”
+          </div>
+        </div>
+
+        <div class="bg-white shadow-xl text-g-blue pt-[1.625rem] px-8 rounded-lg">
+
+          <div class="flex gap-[1.062rem]">
+            <img src="./images/image-jeanette.jpg" alt="avatar pic" class="w-8 h-8 rounded-full ">
+            <div>
+              <h3 class="font-medium text-sm">Jeanette Harmon</h3>
+              <h4 class="pt-1 text-g-blue opacity-50 text-xsm font-medium"> Verified Graduate</h4>
+            </div>
+          </div>
+
+          <div class="font-semibold text-xl mt-[1.125rem] ">
+            An overall wonderful and rewarding experience
+          </div>
+
+          <div class="mt-4 pb-8 opacity-70 font-medium text-sm-2 ">
+            “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
+            while doing something I love. ”
+          </div>
+        </div>
+        <div class="bg-d-blue text-b-gray pt-[1.625rem] px-8 rounded-lg md:col-span-2">
+
+          <div class="flex gap-[1.062rem]">
+            <img src="./images/image-patrick.jpg" alt="avatar pic"
+              class="w-8 h-8 rounded-full border-2 border-m-violet">
+            <div>
+              <h3 class=" font-medium text-sm">Patrick Abrams</h3>
+              <h4 class="pt-1 text-g-blue opacity-50 text-xsm font-medium">Verified Graduate</h4>
+            </div>
+          </div>
+
+          <div class="font-semibold text-xl mt-[1.125rem]">
+            Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and
+            learning from their experiences was easy.
+          </div>
+
+          <div class="mt-4 pb-8 opacity-70 font-medium text-sm-2">
+            “ The staff seem genuinely concerned about my progress which I find really refreshing. The program
+            gave me the confidence necessary to be able to go out in the world and present myself as a capable
+            junior developer. The standard is above the rest. You will get the personal attention you need from
+            an incredible community of smart and amazing people. ”
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white shadow-xl text-g-blue pt-[1.625rem] px-8 rounded-lg">
+        <div class="flex gap-[1.062rem]">
+          <img src="./images/image-kira.jpg" alt="avatar pic" class="w-8 h-8 rounded-full">
+          <div>
+            <h3 class=" font-medium text-sm">Kira Whittle</h3>
+            <h4 class="pt-1 text-g-blue opacity-50 text-xsm font-medium">Verified Graduate</h4>
+          </div>
+        </div>
+
+        <div class="font-semibold text-xl mt-[1.125rem]">
+          Such a life-changing experience. Highly recommended!
+        </div>
+        <div class="mt-4 pb-8 opacity-70 font-medium text-sm-2">
+          “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
+          professionals who can help me learn programming step by step. I was encouraged to enroll by a former
+          student of theirs who can only say wonderful things about the program. The entire curriculum and staff
+          did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team
+          project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial
+          could ever have. In fact, I’ve often referred to it during interviews as an example of my developent
+          experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers.
+          100% recommend! ”
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class=" attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/wildchild04">wildchild04</a>.
+  </div>
+</body>
+
+</html>
